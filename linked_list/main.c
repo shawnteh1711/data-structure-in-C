@@ -6,17 +6,26 @@
 /*   By: steh <steh@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 09:59:34 by steh              #+#    #+#             */
-/*   Updated: 2022/04/22 20:57:09 by steh             ###   ########.fr       */
+/*   Updated: 2022/04/23 12:29:00 by steh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "linked_list.h"
+
+// typedef struct s_node
+// {
+// 	int				data;
+// 	struct s_node *link;
+// };
 
 int main(void)
 {
 	t_node *head;
 	t_node *current;
 
+	// if using struct 
+	// struct s_node	*head;
+	// head = (struct s_node*)malloc(sizeof(struct s_node));
 	// first node
 	head = (t_node *)malloc(sizeof(t_node));
 	head->data = 45;
